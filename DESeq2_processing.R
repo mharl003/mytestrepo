@@ -24,7 +24,7 @@ res<-res[order(res$padj),]
 head(res)
 
 plotMA(dds,ylim=c(-3,3),main='DESeq2')
-dev.copy(png,'M_vs_W.png')
+dev.copy(png,'volcano_diff_expression_W_vs_M.png')
 dev.off()
 
 mcols(res,use.names=TRUE)
